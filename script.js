@@ -24,8 +24,14 @@ $("button").on("click", function () {
             method: "GET"
         }).then(function (fiveDayForecast) {
             
-            console.log(currentForecast.name);
+            console.log(currentForecast);
             console.log(fiveDayForecast);
+            var temperature = $('<div>').text(currentForecast[6].temp);
+            var humidity = $('<div>').text(currentForecast[6].humidity);
+            var windSpeed = $('<div>').text(currentForecast[12].speed);
+            // could not find the uv index in object for current forecast
+
+            $('#current-forecast').append(temperature, humidity, windSpeed);
 
             for(var i = 0; i < fiveDayForecast.length; i += 8) {
                var newForecastDiv = $('<div>').text(fiveDayForecast.list[i]);
