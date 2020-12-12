@@ -1,3 +1,40 @@
-.card {
-    flex-wrap: nowrap;
+.jumbotron {
+    background-color: #2680E3;
 }
+
+label {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.five-day-forecast {
+    width: 19%;
+    float: left;
+    margin: 2px;
+}
+
+.fiveDayForecastImg {
+    width: 50px;
+    height: 50px;
+}
+
+.lowUV {
+    background-color: greenyellow;
+}
+
+.mediumUV {
+    background-color: yellow;
+}
+
+.highUV {
+    background-color: red;
+    color: white;
+}
+
+.inline-img { 
+    display: inline;
+}
+
